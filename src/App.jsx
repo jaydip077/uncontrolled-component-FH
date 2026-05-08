@@ -27,7 +27,7 @@ export default function App() {
   };
 
   const showToastMessage = () => {
-    toast.success("Success Notification !", {
+    toast.success("Appoitment Booked Succesfully !", {
       position: "top-right",
     });
   };
