@@ -1,0 +1,183 @@
+/* Appointment form layout */
+
+.page {
+  padding: 28px 16px 40px;
+}
+
+.page-header {
+  max-width: 1100px;
+  margin: 0 auto 16px;
+  text-align: center;
+}
+
+.page-title {
+  font-size: clamp(26px, 4vw, 40px);
+  margin-bottom: 6px;
+}
+
+.page-subtitle {
+  color: var(--text);
+}
+
+.appointment-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+}
+
+.appointment-form-card {
+  border: none;
+  background: transparent;
+}
+
+.submit-btn {
+  min-width: 180px;
+}
+
+.reset-btn {
+  min-width: 140px;
+}
+
+.success-box {
+  background: rgba(25, 135, 84, 0.08);
+  border: 1px solid rgba(25, 135, 84, 0.25);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+/* Agree checkbox spacing */
+.agree-check {
+  align-items: flex-start;
+}
+
+.appointment-images {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.images-header {
+  padding: 18px 18px 8px;
+}
+
+.images-title {
+  font-size: 20px;
+}
+
+.doctor-hero-card {
+  border: 1px solid var(--border);
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.doctor-hero {
+  background: linear-gradient(
+    135deg,
+    rgba(170, 59, 255, 0.15),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.doctor-hero-img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.doctor-meta {
+  padding: 14px 16px 16px;
+}
+
+.doctor-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.doctor-speciality {
+  color: var(--text);
+}
+
+.doctor-stats {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .doctor-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.doctor-mini-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.12s ease, border-color 0.12s ease,
+    box-shadow 0.12s ease;
+}
+
+.doctor-mini-card.active {
+  border-color: rgba(13, 110, 253, 0.6);
+  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.12);
+}
+
+.doctor-mini-card:hover {
+  transform: translateY(-1px);
+}
+
+.doctor-mini-img-wrap {
+  height: 90px;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.doctor-mini-img {
+  height: 90px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.doctor-mini-name {
+  font-weight: 600;
+}
+
+.doctor-mini-spec {
+  color: var(--text);
+  font-size: 13px;
+}
+
+@media (max-width: 991.98px) {
+  .page-header {
+    margin-bottom: 12px;
+  }
+
+  .appointment-images {
+    margin-top: 14px;
+  }
+
+  .doctor-hero-img {
+    height: 200px;
+  }
+}
+
+/* Make react-bootstrap form controls align nicely */
+.form-label {
+  font-weight: 600;
+}
+
